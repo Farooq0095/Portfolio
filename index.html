@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <nav id="desktop-nav">  
+ <div class="logo">Mohammed Farooq</div> 
+ <div>
+  <ul  class="nav-links">
+  <li><a href="#about">About</a></li>
+  <li><a href="#experience">Experience</a></li>
+  <li><a href="#Projects">Projects</a></li>
+  <li><a href="#Contact">Contact</a></li>
+
+  </ul>
+
+
+ </div>
+ </nav>
+
+ <nav id="hamburger-nav">
+    <div class="logo">Mohammed Farooq</div>
+    <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div class="menu-links">
+       
+            <li><a href="#about"       onclick="toggleMenu()">About     </a></li>
+            
+            <li><a href="#experience"  onclick="toggleMenu()">Experience </a></li>
+            <li><a href="#Projects"     onclick="toggleMenu()">Projects    </a></li>
+            <li><a href="#Contact"     onclick="toggleMenu()">Contact     </a></li>
+          
+            </div>
+        </div>
+    </nav>
+
+<section id="profile">
+    <div class="section_pic-container">
+        <img src="about.jpg" alt="farooq" class="profile-image">
+    </div>
+    <div class="section_text">
+        <p class="section_text_p1"> Hello I'm</p>
+        <h1>Mohammed Farooq</h1>
+        <p class="section_text_p2">Frontend Developer</p>
+        <div class="btn-container">
+            
+           
+            <button class="btn btn-color-2" onclick="openResume()">Download Resume</button>
+            <button  class=" btn btn-color-1" onclick="location.href='./#Contact'">Contact info</button>
+        </div>
+            <div id="social-container">
+                <img src="linkedin_icon.png" alt="linkedin-profile" class="icon"
+               onclick="location.href='https://www.linkedin.com/in/mohammed-farooq-4b3500201'"/>
+               <img src="gmail.png" alt=" gmai" class="icon"
+               onclick="location.href= 'mailto:farooq.610095@gmail.com' "
+               >
+               <img src="instagram.png" alt=" instagram" class="icon"
+               onclick="location.href= href='https://www.instagram.com/md._.farooq'"
+               >
+            </div>
+    
+    </div>
+
+</section>
+       <!-- about section -->
+<section id="about">
+    <p class="section_text_p1">Get to know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+        <div class="section_pic-container">
+            <img src="more.jpg" alt="about" class="about-image"
+            class="about-pic">
+
+        </div>
+        <div class="about-details-container">
+        <div class="about-container">
+            <div class="details-container">
+                <img src="experience.png" alt="experience icon" class="icon"/>
+                <h3>Experience</h3>
+                <p>2 Months <br/> Front-End Development</p>
+            </div>
+            <div class="details-container">
+                <img src="education.jpg" alt="education icon" class="icon"/>
+                <h3>Education</h3>
+                <p>BE(ECE)-2024</p>
+            </div>
+        </div>
+        <div class="text-container">
+            <p>
+                Hello, I'm Mohammed Farooq, currently pursuing my Bachelor's in Electronics and Communication Engineering at MJCET, set to graduate in 2024. 
+                Proficient in front-end development with skills in HTML, CSS, JavaScript, and familiarity with ReactJS, Tailwind CSS, and Bootstrap. 
+                My programming expertise includes C/C++, data structures and algorithms, object-oriented programming, and SQL. Beyond technical skills, I bring strong soft skills such as problem-solving, empathy, and effective teamwork to the table. 
+                Excited to contribute my knowledge and collaborate in diverse projects.
+            </p>
+
+        </div>
+    </div>
+    </div>
+    <img src="arrow-down-sign-to-navigate.png" alt="arrow icon" class="icon arrow"onclick="location.href='./#experience'" >
+</section>
+        <!-- experience section -->
+<section id="experience">
+    <p class="section_text_p1">Explore My</p>
+    <h1 class="title">Experience</h1>
+    <div class="experience-details-container">
+        <div class="about-containers">
+            <div class="details-container">
+          <h2 class="experience-sub-title">Front-End Development</h2>
+          <div class="article-container">
+            <article>
+                <img src="checkbox.png" alt="" class="icon">
+                <div>
+                    <h3>HTML</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+            <article>
+                <img src="checkbox.png" alt="" class="icon">
+                <div>
+                    <h3>CSS</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+            <article>
+                <img src="checkbox.png" alt="" class="icon">
+                <div>
+                    <h3>JAVASCRIPT</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+            <article>
+                <img src="checkbox.png" alt="" class="icon">
+                <div>
+                    <h3>TAILWIND CSS</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+            <article>
+                <img src="checkbox.png" alt="" class="icon">
+                <div>
+                    <h3>BOOTSTRAP</h3>
+                    <p>Experienced</p>
+                </div>
+            </article>
+          </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- projects section -->
+  <section id="Projects">
+    <p class="section_text_p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+s
+  <div class="experience-details-container">
+    <div class="about-container">
+    <div class="details-container color-container">
+        <div class="article-container">
+            <img src="weather-app.png" alt="Project-1"  class="Project-img" />
+
+        </div>
+        <h2 class="experience-sub-title project-title">Project One</h2>
+        <div class="btn-container">
+            <button class="btn btn-color-2 Project-btn" onclick="location.href='https://weatherwave-app.netlify.app/'">Weather Check</button>
+        </div>
+    </div>
+    <div class="details-container color-container">
+        <div class="article-container">
+            <img src="grocery.png" alt="Project-1"  class="Project-img" />
+
+        </div>
+        <h2 class="experience-sub-title project-title">Project Two</h2>
+        <div class="btn-container">
+            <button class="btn btn-color-2 Project-btn" onclick="location.href='https://64cb83c70587b3622b07fb28--clinquant-strudel-8d4c31.netlify.app/'">Explore Grocery Store</button>
+        </div>
+    </div>
+    <div class="details-container color-container">
+        <div class="article-container">
+            <img src="bluetooth-car.png" alt="Project-1"  class="Project-img" />
+
+        </div>
+        <h2 class="experience-sub-title project-title">Project Three</h2>
+        <div class="btn-container">
+            <button class="btn btn-color-2 Project-btn" ></button>
+        </div>
+    </div>
+</div>
+  </div>
+  </section>
+
+  <section id="Contact">
+    <p class="section_text_p1"> Get in Touch</p>
+    <h1 class="title"> contact Me</h1>
+    <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+            <img src="gmail.png" alt="" class="contact-icon"/>
+            <p><a href="mailto:farooq.610095@gmail.com">Mail To</a></p>
+        </div>
+        <div class="contact-info-container">
+            <img src="linkedin_icon.png" alt="" class="contact-icon"/>
+            <p><a href="https://www.linkedin.com/in/mohammed-farooq-4b3500201">Linkedin</a></p>
+        </div><div class="contact-info-container">
+            <img src="instagram.png" alt="" class="contact-icon"/>
+            <p><a href="https://www.instagram.com/md._.farooq">Instagram</a></p>
+        </div>
+    </div>
+
+
+  </section>
+
+
+  <footer>
+    <nav>
+            <div class="nav-links-container">
+            <ul  class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
+          
+            </ul>
+        </div>
+          
+           
+    </nav>
+   <p>Copyright &#169; Farooq All Rights Reserved</p>
+  </footer>
+ </body>
+
+    <script src="script.js"></script>
+</body>
+</html>
